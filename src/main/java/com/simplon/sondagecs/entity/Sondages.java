@@ -7,7 +7,7 @@ public class Sondages {
     private Long id;
     private String description;
     private String question;
-    private LocalDate startDate;
+    private LocalDate startDate = LocalDate.now();
     private LocalDate endDate;
     private String nom;
 
