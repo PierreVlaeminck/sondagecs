@@ -5,11 +5,23 @@
 Création du client Web, celui-ci passe par un Web service pour récupérer les données à afficher sur le site,  
 il est possible via ce projet de créer, modifier ou supprimer des sondages.
 
+#### Lancement du projet :
+Vous aurez besoin pour que ce projet fonctionne d'avoir déjà récupéré la partie WEB service à l'adresse GitHub cité plus haut,
+il faudra alors le lancer en premier, pour ensuite lancer la partie client contenu dans ce Repositories.  
+Vous pouvez venir le modifier dans le fichier "application.properties", il suffit pour cela d'ajouter :  
+server.port="numéro de port".  
+Pour acceder au projet passé par l'URL suivante : http://localhost:8093
+
 ### 2 - Pages du site :
 Ce projet ne contient que le service coté client, vous aurez besoin de la partie web service qui se trouve sur mon GitHub,
-voici le Repositories concerné :
+voici le Repositories concerné :  
 https://github.com/PierreVlaeminck/sondagesw
 
+**index.html** : affichage de tous les sondages présent dans votre base de donnée.  
+**sondages.html** : affiche les informations d'un seul sondage, avec la possibilité de modifier ou supprimer le sondage.  
+**form.html** : permet la création d'un nouveau sondage qui se sauvegarde dans la base de donnée, 
+**celui-ci** est aussi repris lorsque l'on clique sur modifier et affiche toutes les informations du sondage actuel,
+que l'on peut alors modifier.
 
 ### 3 - Outils de réalisation :
 Code réalisé avec : Intellij  
@@ -25,16 +37,9 @@ Navigateur utilisé : Google Chrome
 
 ### 4 - Installation du projet :
  
-#### a - Logiciel requis :  
+#### Logiciel requis :  
 - Intellij
 - Google Chrome
 - Aucune configuration particulière requise au niveau matériel
-
-#### b - Lancement du projet :
-Vous aurez besoin pour que ce projet fonctionne d'avoir déjà récupéré la partie WEB service à l'adresse GitHub cité plus haut,
-il faudra alors le lancer en premier, pour ensuite lancer la partie client contenu dans ce Repositories.  
-Vous pouvez venir le modifier dans le fichier "application.properties", il suffit pour cela d'ajouter :  
-server.port="numéro de port"  
-Pour acceder au projet passé par l'URL suivante : http://localhost:8093
   
 Merci d'avoir pris le temp de lire le ReadMe.
