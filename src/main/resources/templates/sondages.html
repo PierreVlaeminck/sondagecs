@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sondages</title>
+    <link rel="stylesheet" href="/css/sondage.css">
+</head>
+<body>
+<section th:object="${sondages}">
+    <h1 th:text="${sondages.description}"></h1>
+    <p th:text="${sondages.question}"></p>
+    <p th:text="${sondages.startDate}"></p>
+    <p th:text="${sondages.endDate}"></p>
+    <p th:text="${sondages.nom}"></p>
+
+    <p><a th:href="@{/sondages/maj/{id}(id=${sondages.id})}">modifier</a> </p>
+    <p><a th:href="@{/sondages/del/{id}(id=${sondages.id})}">supprimer</a> </p>
+</section>
+<footer>
+    <a href="/">Retour à la page d'accueil</a>
+</footer>
+</body>
+</html>

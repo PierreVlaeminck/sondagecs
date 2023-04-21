@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des sondages</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+<header>
+    <h1>Liste des sondages</h1>
+</header>
+<main>
+    <table>
+        <thead>
+        <tr>
+            <th>Créateur du sondage</th>
+            <th>Description</th>
+            <th>Question</th>
+            <th>Date de début</th>
+            <th>Date de fin</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="sondages : ${sondages}">
+            <td><a th:href="@{/sondages/{id}(id=${sondages.id})}" th:text="${sondages.nom}"></a></td>
+            <td th:text="${sondages.description}"></td>
+            <td th:text="${sondages.question}"></td>
+            <td th:text="${sondages.startDate}"></td>
+            <td th:text="${sondages.endDate}"></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+<div class="addSondage">
+    <a href="./sondages/form/add">Ajouter un sondage</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+<header>
+    <h1> Formulaire Sondage</h1>
+</header>
+
+<main>
+    <form method="post" th:object="${sondages}">
+        <label>Description</label>
+        <input type="text" name="description" id="description" th:field="*{description}">
+
+        <label>Question</label>
+        <input type="text" name="question" id="question" th:field="*{question}">
+
+        <label>Date de début</label>
+        <input type="date" name="text" id="startDate" th:field="*{startDate}">
+
+        <label>Date de fin</label>
+        <input type="date" name="text" id="endDate" th:field="*{endDate}">
+
+        <label>Nom</label>
+        <input type="text" name="nom" id="nom" th:field="*{nom}">
+
+        <button type="submit" id="submit-button">Valider</button>
+    </form>
+</main>
+<footer>
+    <a href="/">Retour à la page d'accueil</a>
+</footer>
+</body>
+</html>
