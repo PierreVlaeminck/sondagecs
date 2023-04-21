@@ -32,7 +32,9 @@ Navigateur utilisé : Google Chrome
 
 #### b - Lancement du projet :
 Vous aurez besoin pour que ce projet fonctionne d'avoir déjà récupéré la partie WEB service à l'adresse GitHub cité plus haut,
-il faudra alors le lancer en premier, pour ensuite lancer la partie client contenu dans ce Repositories.
-  
+il faudra alors le lancer en premier, pour ensuite lancer la partie client contenu dans ce Repositories.  
+Vous pouvez venir le modifier dans le fichier "application.properties", il suffit pour cela d'ajouter :  
+server.port="numéro de port"  
+Pour acceder au projet passé par l'URL suivante : http://localhost:8093
   
 Merci d'avoir pris le temp de lire le ReadMe.
