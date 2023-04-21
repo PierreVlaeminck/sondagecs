@@ -11,7 +11,7 @@ il est possible via ce projet de créer, modifier ou supprimer des sondages.
 - Intellij
 - Google Chrome
 - Aucune configuration particulière requise au niveau matériel
-- 
+
 #### Lancement du projet :
 Vous aurez besoin pour que ce projet fonctionne d'avoir déjà récupéré la partie WEB service à l'adresse GitHub cité plus haut,
 il faudra alors le lancer en premier, pour ensuite lancer la partie client contenu dans ce Repositories.  
